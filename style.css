@@ -1,0 +1,180 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Style for the navigation bar */
+nav {
+    display: flex;           /* Use flexbox for alignment */
+    align-items: center;     /* Vertically center the items */
+    justify-content: space-between; /* Align logo to left, links to right */
+    padding: 10px 20px;      /* Add some padding for spacing */
+    background-color: #f8f8f8; /* Optional: Background color for the nav */
+}
+
+/* Logo styling */
+nav .logo {
+    flex: 1;                 /* Takes up as much space as needed */
+}
+
+/* Navigation links styling */
+nav ul {
+    list-style: none;        /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;           /* Use flexbox for inline list items */
+    gap: 20px;               /* Space between the links */
+}
+
+/* Individual link styling */
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;   /* Remove underline */
+    color: #333;             /* Link color */
+    font-weight: bold;       /* Make the text bold */
+}
+/* Slider Container */
+#slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    height: 100px;
+}
+
+
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+h2 {
+    margin-top: 20px;
+    color: #333;
+}
+
+section {
+    margin-bottom: 30px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#feedback-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#feedback-form textarea {
+    width: auto;
+    height: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#feedback-form button {
+    padding: 10px;
+    background: white;
+    color: darkblue;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#feedback-form button:hover {
+    background: darkblue;
+    color: white;
+    transition: 1s;
+}
+
+
+.slider-container {
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    min-width: 100%;
+    position: relative;
+}
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.slide-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+.slide-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+
+@media (max-width: 768px) {
+    .slide-title {
+        font-size: 18px;
+    }
+    .slide-content {
+        padding: 10px;
+    }
+}

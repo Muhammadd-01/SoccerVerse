@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matches-SoccerVerse</title>
+    <style>
+        /* Reset default styles */
+        body, html {
+            background-color: rgba(0, 0, 0, 0.105);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation styles */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: darkblue;
+        }
+
+       
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: 1s;
+        }
+        
+
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      margin-top: 10px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .match-container {
+      margin-bottom: 40px;
+      margin-top: 10px;
+    }
+
+    .match {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .match:last-child {
+      border-bottom: none;
+    }
+
+    .team {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      font-weight: bold;
+      color: #444;
+    }
+
+    .team img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .time {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .status {
+      font-size: 16px;
+      color: #999;
+    }
+
+    .score {
+      font-size: 16px;
+      color: #444;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        width: auto;
+        padding: 10px;
+      }
+
+      .team {
+        font-size: 16px;
+      }
+
+      .time, .status, .score {
+        font-size: 14px;
+      }
+
+      .team img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+
+        /* Footer styles */
+        footer {
+            background-color: darkblue;
+            padding: 20px;
+            text-align: center;
+            
+
+        }
+
+
+
+        .social-media a {
+            color: white;
+            transition: 1s;
+
+        }
+
+
+        .footer-content {
+            color: white;
+            transition: 1s;
+
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img style="text-align: start;" src="img/logo/Logo.png" alt="Logo" width="250px"></a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="Game.html">Matches</a></li>
+            <li><a href="Players.html">Players</a></li>
+            <li><a href="topScore.html">Top Scores</a></li>
+            
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li><a href="register-now.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2>Match Schedule: UEFA Euro 2024 - Group A</h2>
+        <div class="match-container">
+          <div class="match">
+            <div class="team">
+              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/Netherlands_national_football_team_logo.svg/1200px-Netherlands_national_football_team_logo.svg.png" alt="Netherlands">
+              Netherlands
+            </div>
+            <div class="time">12:30 PM</div>
+            <div class="status">Scheduled</div>
+            <div class="score">Score: 2 - 1</div>
+          </div>
+          <div class="match">
+            <div class="team">
+              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/France_national_football_team_logo.svg/800px-France_national_football_team_logo.svg.png" alt="France">
+              France
+            </div>
+            <div class="time">3:00 PM</div>
+            <div class="status">Scheduled</div>
+            <div class="score">Score: 0 - 0</div>
+          </div>
+          <div class="match">
+            <div class="team">
+              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/89/Italy_national_football_team_logo_2017.svg/800px-Italy_national_football_team_logo_2017.svg.png" alt="Italy">
+              Italy
+            </div>
+            <div class="time">6:00 PM</div>
+            <div class="status">Live</div>
+            <div class="score">Score: 1 - 0</div>
+          </div>
+          <div class="match">
+            <div class="team">
+              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Sweden_national_football_team_logo.svg/800px-Sweden_national_football_team_logo.svg.png" alt="Sweden">
+              Sweden
+            </div>
+            <div class="time">8:30 PM</div>
+            <div class="status">Finished</div>
+            <div class="score">Score: 3 - 2</div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="container">
+        <h2>Match Schedule: UEFA Euro 2024 - Group B</h2>
+        <div class="match-container">
+          <div class="match">
+            <div class="team">
+              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/England_national_football_team_logo.svg/1200px-England_national_football_team_logo.svg.png" alt="England">
+              England
+            </div>
+            <div class="time">12:30 PM</div>
+            <div class="status">Scheduled</div>
+            <div class="score">Score: 2 - 0</div>
+          </div>
+          <div class="match">
+            <div class="team">
+              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/11/Germany_national_football_team_logo.svg/1200px-Germany_national_football_team_logo.svg.png" alt="Germany">
+              Germany
+            </div>
+            <div class="time">3:00 PM</div>
+            <div class="status">Scheduled</div>
+            <div class="score">Score: 1 - 1</div>
+          </div>
+          <div class="match">
+            <div class="team">
+              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/19/Spain_national_football_team_logo.svg/1200px-Spain_national_football_team_logo.svg.png" alt="Spain">
+              Spain
+            </div>
+            <div class="time">6:00 PM</div>
+            <div class="status">Live</div>
+            <div class="score">Score: 3 - 2</div>
+          </div>
+          <div class="match">
+            <div class="team">
+              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Portugal_national_football_team_logo.svg/800px-Portugal_national_football_team_logo.svg.png" alt="Portugal">
+              Portugal
+            </div>
+            <div class="time">8:30 PM</div>
+            <div class="status">Finished</div>
+            <div class="score">Score: 4 - 1</div>
+          </div>
+        </div>
+
+
+          <!-- FIFA World Cup 2022 - Group Stage -->
+  <div class="container">
+    <h2>Match Schedule: FIFA World Cup 2022 - Group A</h2>
+    <div class="match-container">
+      <div class="match">
+        <div class="team">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/79/Ecuador_national_football_team_logo.svg/1200px-Ecuador_national_football_team_logo.svg.png" alt="Ecuador">
+          Ecuador
+        </div>
+        <div class="time">20 Nov 2022</div>
+        <div class="status">Finished</div>
+        <div class="score">Score: 2 - 0</div>
+      </div>
+      <div class="match">
+        <div class="team">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Qatar_national_football_team_logo.svg/1200px-Qatar_national_football_team_logo.svg.png" alt="Qatar">
+          Qatar
+        </div>
+        <div class="time">20 Nov 2022</div>
+        <div class="status">Finished</div>
+        <div class="score">Score: 0 - 2</div>
+      </div>
+      <div class="match">
+        <div class="team">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/79/Netherlands_national_football_team_logo.svg/1200px-Netherlands_national_football_team_logo.svg.png" alt="Netherlands">
+          Netherlands
+        </div>
+        <div class="time">21 Nov 2022</div>
+        <div class="status">Finished</div>
+        <div class="score">Score: 2 - 0</div>
+      </div>
+      <div class="match">
+        <div class="team">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Senegal_national_football_team_logo.svg/1200px-Senegal_national_football_team_logo.svg.png" alt="Senegal">
+          Senegal
+        </div>
+        <div class="time">21 Nov 2022</div>
+        <div class="status">Finished</div>
+        <div class="score">Score: 0 - 2</div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Add more groups for FIFA 2022 and 2018 -->
+   <div class="container">
+    <h2>Match Schedule: FIFA World Cup 2022 - Group B</h2>
+    <div class="match-container">
+      <div class="match">
+        <div class="team">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/England_national_football_team_logo.svg/1200px-England_national_football_team_logo.svg.png" alt="England">
+          England
+        </div>
+        <div class="time">21 Nov 2022</div>
+        <div class="status">Finished</div>
+        <div class="score">Score: 6 - 2</div>
+      </div>
+      <div class="match">
+        <div class="team">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Iran_national_football_team_logo.svg/800px-Iran_national_football_team_logo.svg.png" alt="Iran">
+          Iran
+        </div>
+        <div class="time">21 Nov 2022</div>
+        <div class="status">Finished</div>
+        <div class="score">Score: 2 - 6</div>
+      </div>
+      <div class="match">
+        <div class="team">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/USA_crest_2022.svg/800px-USA_crest_2022.svg.png" alt="USA">
+          USA
+        </div>
+        <div class="time">22 Nov 2022</div>
+        <div class="status">Finished</div>
+        <div class="score">Score: 1 - 1</div>
+      </div>
+      <div class="match">
+        <div class="team">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Wales_national_football_team_badge.svg/1200px-Wales_national_football_team_badge.svg.png" alt="Wales">
+          Wales
+        </div>
+        <div class="time">22 Nov 2022</div>
+        <div class="status">Finished</div>
+        <div class="score">Score: 1 - 1</div>
+      </div>
+    </div>
+  </div>
+
+
+   <!-- FIFA World Cup 2018 - Group A -->
+   <div class="container">
+    <h2>Match Schedule: FIFA World Cup 2018 - Group A</h2>
+    <div class="match-container">
+      <div class="match">
+        <div class="team">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Russia_national_football_team_logo.svg/1024px-Russia_national_football_team_logo.svg.png" alt="Russia">
+          Russia
+        </div>
+        <div class="time">14 Jun 2018</div>
+        <div class="status">Finished</div>
+        <div class="score">Score: 5 - 0</div>
+      </div>
+      <div class="match">
+        <div class="team">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e8/Saudi_Arabia_national_football_team_logo.svg/1200px-Saudi_Arabia_national_football_team_logo.svg.png" alt="Saudi Arabia">
+          Saudi Arabia
+        </div>
+        <div class="time">14 Jun 2018</div>
+        <div class="status">Finished</div>
+        <div class="score">Score: 0 - 5</div>
+      </div>
+      <div class="match">
+        <div class="team">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/Egyptian_Football_Association_logo.svg/1200px-Egyptian_Football_Association_logo.svg.png" alt="Egypt">
+          Egypt
+        </div>
+        <div class="time">15 Jun 2018</div>
+        <div class="status">Finished</div>
+        <div class="score">Score: 0 - 1</div>
+      </div>
+      <div class="match">
+        <div class="team">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Uruguay_national_football_team_logo.svg/1200px-Uruguay_national_football_team_logo.svg.png" alt="Uruguay">
+          Uruguay
+        </div>
+        <div class="time">15 Jun 2018</div>
+        <div class="status">Finished</div>
+        <div class="score">Score: 1 - 0</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Match Schedule: FIFA World Cup 2018 - Group B</h2>
+    <div class="match-container">
+      <div class="match">
+        <div class="team">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Spain_national_football_team_badge_2010.svg/1200px-Spain_national_football_team_badge_2010.svg.png" alt="Spain">
+          Spain
+        </div>
+        <div class="time">15 Jun 2018</div>
+        <div class="status">Finished</div>
+        <div class="score">Score: 3 - 3</div>
+      </div>
+      <div class="match">
+        <div class="team">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Portugal_national_team_logo.svg/1200px-Portugal_national_team_logo.svg.png" alt="Portugal">
+          Portugal
+        </div>
+        <div class="time">15 Jun 2018</div>
+        <div class="status">Finished</div>
+        <div class="score">Score: 3 - 3</div>
+      </div>
+      <div class="match">
+        <div class="team">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Morocco_national_football_team_badge_2022.svg/800px-Morocco_national_football_team_badge_2022.svg.png" alt="Morocco">
+          Morocco
+        </div>
+        <div class="time">15 Jun 2018</div>
+        <div class="status">Finished</div>
+        <div class="score">Score: 0 - 1</div>
+      </div>
+      <div class="match">
+        <div class="team">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/IR_Iran_national_football_team_logo.svg/1200px-IR_Iran_national_football_team_logo.svg.png" alt="Iran">
+          Iran
+        </div>
+        <div class="time">15 Jun 2018</div>
+        <div class="status">Finished</div>
+        <div class="score">Score: 1 - 0</div>
+      </div>
+    </div>
+  </div>
+
+
+        
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 SoccerVerse. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#" style="color: white; margin: 0 10px;">Facebook</a> |
+                <a href="#" style="color: white; margin: 0 10px;">Twitter</a> |
+                <a href="#" style="color: white; margin: 0 10px;">Instagram</a>
+            </div>
+            <div class="useful-links">
+                <a href="PrivacyPolicy.html" style="color: white; margin: 0 10px;">Privacy Policy</a> |
+                <a href="TermsOfService.html" style="color: white; margin: 0 10px;">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

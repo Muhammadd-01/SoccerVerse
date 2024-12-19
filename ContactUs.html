@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Contact us - SoccerVerse  </title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: darkblue;
+        }
+
+
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: 1s;
+        }
+
+        .map-link {
+            width: 100%;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .map-link a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 18px;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+        .feedback-form {
+            flex: 1;
+            padding: 20px;
+            border-right: 2px solid #ddd;
+        }
+        .contact-info {
+            width: 300px;
+            padding: 20px;
+        }
+        .contact-info h2 {
+            margin-top: 0;
+        }
+        .contact-info p {
+            margin: 10px 0;
+        }
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .feedback-form h1 {
+            margin-top: 0;
+        }
+        .feedback-form label {
+            display: block;
+            margin-top: 10px;
+        }
+        .feedback-form input, .feedback-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .feedback-form button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .feedback-form button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            margin-top: 707px;
+
+            background-color: darkblue;
+            padding: 20px;
+            text-align: center;
+
+        }
+
+
+
+        .social-media a {
+            color: white;
+            transition: 1s;
+
+        }
+
+
+        .footer-content {
+            color: white;
+            transition: 1s;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img style="text-align: start;" src="img/logo/Logo.png" alt="Logo" width="250px"></a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="Game.html">Matches</a></li>
+            <li><a href="Players.html">Players</a></li>
+            <li><a href="topScore.html">Top Scores</a></li>
+            
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li><a href="register-now.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="map-link">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2701.560946087009!2d8.571886476898413!3d47.38148710349489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479aa0c18166e45d%3A0x9b35f19a87a7dd52!2sFIFA%20headquarters%2C%20Forrenweidstrasse%2C%208044%20Z%C3%BCrich%2C%20Switzerland!5e0!3m2!1sen!2s!4v1724593486772!5m2!1sen!2s" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="container">
+        <div class="feedback-form">
+            <h1>Feedback Form</h1>
+            <form id="feedback-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p><strong>Address:</strong> Shah Faisal Colony Flyover, Faisal Cantonment, Karachi,</p>
+            <p><strong>Phone:</strong> <a href="tel:+1234567890">(021) 34580415</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@example.com">media@soccer-verse.org</a></p>
+            <p><strong>Website:</strong> <a href="https://www.example.com" target="_blank">www.Ssoccerverse.com</a></p>
+        </div>
+    </div>
+
+    
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 SoccerVerse. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/" style="color: white; margin: 0 10px;">Facebook</a> |
+                <a href="https://x.com/" style="color: white; margin: 0 10px;">Twitter</a> |
+                <a href="https://instagram.com/" style="color: white; margin: 0 10px;">Instagram</a>
+            </div>
+            <div class="useful-links">
+                <a href="PrivacyPolicy.html" style="color: white; margin: 0 10px;">Privacy Policy</a> |
+                <a href="TermsOfService.html" style="color: white; margin: 0 10px;">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        document.getElementById('feedback-form').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent form submission for demo
+            alert('Thank you for your feedback!');
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
